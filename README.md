@@ -1,27 +1,18 @@
-# React + TypeScript + Vite
+# This repository is based on tanstack query + react + type script
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+this is an demonstration of how to utilize tanstack query with react library
 
-Currently, two official plugins are available:
+At first an react folder is created using 
+### npm create vite
+### select typeScript and name the project
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+and then json server is initialized using these commands 
+### npm install json-server
+### npx json-server (file path.json) [need to run this command every time u need to work on json server]
+now the json server is hosted on https://localhost:3000 server and we can send api requests to this url 
+we can send all types requests such as get,post,put,delete,update.
 
-## Expanding the ESLint configuration
+now install tanstack query package using command 
+### npm i @tanstack/react-query
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+then u can use tanstack query in your project 
